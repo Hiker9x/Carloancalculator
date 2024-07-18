@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Loan Calculator</h1>
+    <form id="loanForm">
+      <label for="vehiclePrice">Vehicle Price ($):</label>
+      <input type="number" id="vehiclePrice" placeholder="Enter vehicle price" required>
+      
+      <label for="downpayment">Downpayment ($):</label>
+      <input type="number" id="downpayment" placeholder="Enter downpayment" required>
+      
+      <label for="loanTenure">Loan Tenure (months):</label>
+      <input type="number" id="loanTenure" placeholder="Enter loan tenure in months" required>
+      
+      <label for="interestRate">Loan Interest Rate (%):</label>
+      <input type="number" id="interestRate" placeholder="Enter loan interest rate" step="0.01" required>
+      
+      <label for="installmentPaid">Number of Installments Paid:</label>
+      <input type="number" id="installmentPaid" placeholder="Enter number of installments paid" required>
+      
+      <label for="additionalCharges">Additional Charges ($):</label>
+      <input type="number" id="additionalCharges" placeholder="Enter additional charges (if any)">
+      
+      <button type="button" onclick="calculateLoan()">Calculate</button>
+    </form>
+    
+    <div id="results"></div>
+
+    <!-- Donation Button -->
+    <div class="donation">
+      <p class="by-line">By: Abdul Hiker | 2024</p> <!-- Added a class for styling -->
+      <a href="https://www.paypal.com/paypalme/AbdulHiker" target="_blank">
+        <button>Donate</button>
+      </a>
+    </div>
+    
+    <!-- Visitor Counter -->
+    <div class="visitor-counter">
+      <p>Visitor Count: <span id="visitorCount">0</span></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
